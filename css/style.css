@@ -27,6 +27,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: auto;
 }
 
 .number {
@@ -95,6 +96,7 @@ main {
     border-radius: 5px;
     transform: translate(0, -50%);
     transform-origin: bottom center;
+    z-index: 2;
 }
 
 .minute-hand {
@@ -105,6 +107,7 @@ main {
     border-radius: 5px;
     transform: translate(0, -50%);
     transform-origin: bottom center;
+    z-index: 2;
 }
 
 .hour-hand {
@@ -115,6 +118,7 @@ main {
     border-radius: 13px;
     transform: translate(0, -50%);
     transform-origin: bottom center;
+    z-index: 2;
 }
 
 .center {
@@ -123,4 +127,282 @@ main {
     border-radius: 20px;
     background-color: #a52a2a;
     position: absolute;
+    z-index: 3;
 }
+
+.seconds {
+    font-size: 10px;
+    width: 100%;
+    height: 100%;
+    font-weight: 800;
+    position: absolute;
+    text-align: center;
+}
+
+.traco-1 {
+    transform: rotate(6deg);
+}
+
+.traco-2 {
+    transform: rotate(12deg);
+}
+
+.traco-3 {
+    transform: rotate(18deg);
+}
+
+.traco-4 {
+    transform: rotate(24deg);
+}
+
+.traco-5 {
+    transform: rotate(36deg);
+}
+
+.traco-6 {
+    transform: rotate(42deg);
+}
+
+.traco-7 {
+    transform: rotate(48deg);
+}
+
+.traco-8 {
+    transform: rotate(54deg);
+}
+
+.traco-9 {
+    transform: rotate(66deg);
+}
+
+.traco-10 {
+    transform: rotate(72deg);
+}
+
+.traco-11 {
+    transform: rotate(78deg);
+}
+
+.traco-12 {
+    transform: rotate(84deg);
+}
+
+.traco-13 {
+    transform: rotate(96deg);
+}
+
+.traco-14 {
+    transform: rotate(102deg);
+}
+
+.traco-15 {
+    transform: rotate(108deg);
+}
+
+.traco-16 {
+    transform: rotate(114deg);
+}
+
+.traco-17 {
+    transform: rotate(126deg);
+}
+
+.traco-18 {
+    transform: rotate(132deg);
+}
+
+.traco-19 {
+    transform: rotate(138deg);
+}
+
+.traco-20 {
+    transform: rotate(144deg);
+}
+
+.traco-21 {
+    transform: rotate(156deg);
+}
+
+.traco-22 {
+    transform: rotate(162deg);
+}
+
+.traco-23 {
+    transform: rotate(168deg);
+}
+
+.traco-24 {
+    transform: rotate(174deg);
+}
+
+.traco-25 {
+    transform: rotate(186deg);
+}
+
+.traco-26 {
+    transform: rotate(192deg);
+}
+
+.traco-27 {
+    transform: rotate(198deg);
+}
+
+.traco-28 {
+    transform: rotate(204deg);
+}
+
+.traco-29 {
+    transform: rotate(216deg);
+}
+
+.traco-30 {
+    transform: rotate(222deg);
+}
+
+.traco-31 {
+    transform: rotate(228deg);
+}
+
+.traco-32 {
+    transform: rotate(234deg);
+}
+
+.traco-33 {
+    transform: rotate(246deg);
+}
+
+.traco-34 {
+    transform: rotate(252deg);
+}
+
+.traco-35 {
+    transform: rotate(258deg);
+}
+
+.traco-36 {
+    transform: rotate(264deg);
+}
+
+.traco-37 {
+    transform: rotate(276deg);
+}
+
+.traco-38 {
+    transform: rotate(282deg);
+}
+
+.traco-39 {
+    transform: rotate(288deg);
+}
+
+.traco-40 {
+    transform: rotate(294deg);
+}
+
+.traco-41 {
+    transform: rotate(306deg);
+}
+
+.traco-42 {
+    transform: rotate(312deg);
+}
+
+.traco-43 {
+    transform: rotate(318deg);
+}
+
+.traco-44 {
+    transform: rotate(324deg);
+}
+
+.traco-45 {
+    transform: rotate(336deg);
+}
+
+.traco-46 {
+    transform: rotate(342deg);
+}
+
+.traco-47 {
+    transform: rotate(348deg);
+}
+
+.traco-48 {
+    transform: rotate(354deg);
+}
+
+.rolex {
+    position: absolute;
+    width: 20%;
+    top: 18%;
+    z-index: 1;
+}
+
+.footer-index {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    font-size: 12px;
+    margin: 5px;
+}
+
+footer img {
+    width: 30px;
+    margin: 0 5px;
+}
+
+@media screen and (max-width: 580px) {
+    
+    .clock {
+        min-width: 85vw;
+        min-height: 85vw;
+        border: 8px solid #333;
+    }
+
+    .number {
+        font-size: 0.8rem;
+    }
+
+    .seconds {
+        font-size: 8px;
+    }
+
+    .second-hand {
+        width: 2px;
+        height: 40%;
+    }
+
+    .minute-hand {
+        width: 4px;
+        height: 36%;
+    }
+
+    .hour-hand {
+        width: 6px;
+        height: 30%;
+    }
+
+    .center {
+        width: 12px;
+        height: 12px
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
