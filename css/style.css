@@ -355,6 +355,29 @@ footer img {
     margin: 0 5px;
 }
 
+.data {
+    width: 20%;
+    height: 7%;
+    position: absolute;
+    right: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.calendario {
+    background-color:blanchedalmond;
+    border-radius: 5px;
+    width: 90%;
+    height: 90%;
+    margin: 0.1rem 0.1rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
 @media screen and (max-width: 580px) {
     
     .clock {
