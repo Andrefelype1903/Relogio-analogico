@@ -345,21 +345,11 @@ main {
     align-items: center;
 }
 
-footer p {
-    font-size: 12px;
-    margin: 5px;
-}
-
-footer img {
-    width: 30px;
-    margin: 0 5px;
-}
-
 .data {
     width: 20%;
     height: 7%;
     position: absolute;
-    right: 100px;
+    right: 16%;
     display: flex;
     flex-direction: row-reverse;
 }
@@ -375,6 +365,17 @@ footer img {
     align-items: center;
     justify-content: center;
 }
+
+footer p {
+    font-size: 12px;
+    margin: 5px;
+}
+
+footer img {
+    width: 30px;
+    margin: 0 5px;
+}
+
 
 
 
