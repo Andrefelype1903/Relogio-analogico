@@ -17,6 +17,8 @@ const diaSemana = document.querySelector('.semana')
 const getTime = () => {
     const date = new Date();
 
+    console.log(date.getDay())
+
     return {
         hours: date.getHours(),
         minutes: date.getMinutes(),
@@ -35,8 +37,8 @@ const getDay = () => {
         month: dateToday.getMonth() + 1,
         year: dateToday.getFullYear(),
     }
-
 }
+
 
 const dataAtualizada = () => {
 
@@ -62,4 +64,4 @@ setInterval( () => {
 } , 1000)
 
 
-dataAtualizada()
+dataAtualizada();
