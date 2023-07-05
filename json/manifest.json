@@ -1,0 +1,15 @@
+{
+    "name": "Relógio analógico",
+    "short_name": "Reógio",
+    "icons": [
+        {
+            "src": "./imagem/Analog-Timepiece-Watch-Hours-Clock-Minutes-Time-4522011.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        }
+    ],
+    "start_url": "./index.html",
+    "display": "standalone",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff"
+}
