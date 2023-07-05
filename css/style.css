@@ -349,10 +349,15 @@ main {
     width: 20%;
     height: 7%;
     position: absolute;
-    left: 55%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     margin: 0.5rem;
+}
+
+.data-dias {
+    display: flex;
+    flex-direction: row;
 }
 
 .calendario {
@@ -362,22 +367,14 @@ main {
     height: 90%;
     margin: 0.1rem 0.1rem;
     display: flex;
+
     text-align: center;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 0.3rem;
     font-size: 1rem;
 }
 
-.semana {
-    position: absolute;
-    width: 20%;
-    text-align: center;
-    padding: 0.2rem;
-    background-color: #ffebcd;
-    right: 60%;
-    border-radius: 5px;
-}
 
 footer p {
     font-size: 12px;
