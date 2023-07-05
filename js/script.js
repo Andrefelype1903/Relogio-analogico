@@ -2,22 +2,45 @@
 const hourHand = document.querySelector('.hour-hand')
 const minuteHand = document.querySelector('.minute-hand')
 const secondHand = document.querySelector('.second-hand');
-
 const diaAtualizado = document.querySelector('.dia');
-
 const mesAtlualizado = document.querySelector('.mes');
-
 const anoAtualizado = document.querySelector('.ano');
-
 const diaSemana = document.querySelector('.semana')
 
+
+var dataAtual = new Date();
+
+var diaDaSemana = dataAtual.getDay();
+
+switch (diaDaSemana) {
+    case 0:
+      diaSemana.textContent = "Domingo";
+      break;
+    case 1:
+        diaSemana.textContent = "Segunda-feira";
+      break;
+    case 2:
+        diaSemana.textContent = "Terça-feira";
+      break;
+    case 3:
+      diaSemana.textContent = "Quarta-feira";
+      break;
+    case 4:
+        diaSemana.textContent = "Quinta-feira";
+      break;
+    case 5:
+        diaSemana.textContent = "Sexta-feira";
+      break;
+    case 6:
+        diaSemana.textContent = "Sábado";
+      break;
+  }
 
 
 
 const getTime = () => {
     const date = new Date();
 
-    console.log(date.getDay())
 
     return {
         hours: date.getHours(),
@@ -30,7 +53,6 @@ const getTime = () => {
 
 const getDay = () => {
     const dateToday = new Date();
-    console.log(dateToday.getUTCDay())
 
     return {
         day: dateToday.getDate(),
