@@ -7,7 +7,9 @@ const diaAtualizado = document.querySelector('.dia');
 
 const mesAtlualizado = document.querySelector('.mes');
 
-const anoAtualizado = document.querySelector('.ano')
+const anoAtualizado = document.querySelector('.ano');
+
+const diaSemana = document.querySelector('.semana')
 
 
 

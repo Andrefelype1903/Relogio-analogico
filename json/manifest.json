@@ -1,9 +1,9 @@
 {
     "name": "Relógio analógico",
-    "short_name": "Reógio",
+    "short_name": "Relógio",
     "icons": [
         {
-            "src": "./imagem/Analog-Timepiece-Watch-Hours-Clock-Minutes-Time-4522011.png",
+            "src": "../imagem/Analog-Timepiece-Watch-Hours-Clock-Minutes-Time-4522011.png",
             "type": "image/png",
             "sizes": "192x192"
         }

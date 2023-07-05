@@ -356,7 +356,7 @@ main {
 }
 
 .calendario {
-    background-color:blanchedalmond;
+    background-color:#ffebcd;
     border-radius: 5px;
     width: 90%;
     height: 90%;
@@ -367,6 +367,16 @@ main {
     justify-content: center;
     padding: 0.3rem;
     font-size: 1rem;
+}
+
+.semana {
+    position: absolute;
+    width: 20%;
+    text-align: center;
+    padding: 0.2rem;
+    background-color: #ffebcd;
+    right: 60%;
+    border-radius: 5px;
 }
 
 footer p {
