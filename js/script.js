@@ -3,7 +3,11 @@ const hourHand = document.querySelector('.hour-hand')
 const minuteHand = document.querySelector('.minute-hand')
 const secondHand = document.querySelector('.second-hand');
 
-const day = document.querySelector('.dia')
+const diaAtualizado = document.querySelector('.dia');
+
+const mesAtlualizado = document.querySelector('.mes');
+
+const anoAtualizado = document.querySelector('.ano')
 
 
 
@@ -15,10 +19,32 @@ const getTime = () => {
         hours: date.getHours(),
         minutes: date.getMinutes(),
         seconds: date.getSeconds(),
-        day: date.getDay(),
-        month: date.getMonth(),
-        year: date.getFullYear(),
-    };
+       
+    }
+    
+}
+
+const getDay = () => {
+    const dateToday = new Date();
+    console.log(dateToday.getUTCDay())
+
+    return {
+        day: dateToday.getDate(),
+        month: dateToday.getMonth() + 1,
+        year: dateToday.getFullYear(),
+    }
+
+}
+
+const dataAtualizada = () => {
+
+    const{day, month, year} = getDay()
+
+    diaAtualizado.textContent = day;
+    mesAtlualizado.textContent = month;
+    anoAtualizado.textContent = year
+
+
 }
 
 setInterval( () => {
@@ -33,10 +59,5 @@ setInterval( () => {
 
 } , 1000)
 
-const dataAtualizada = () => {
-
-    const{day, month, year} = getTime()
-
-}
 
 dataAtualizada()
