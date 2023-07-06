@@ -1,4 +1,6 @@
 
+// seletores
+
 const hourHand = document.querySelector('.hour-hand')
 const minuteHand = document.querySelector('.minute-hand')
 const secondHand = document.querySelector('.second-hand');
@@ -7,6 +9,49 @@ const mesAtlualizado = document.querySelector('.mes');
 const anoAtualizado = document.querySelector('.ano');
 const diaSemana = document.querySelector('.semana')
 
+
+
+
+// Código da hora
+const getTime = () => {
+    const date = new Date();
+
+
+    return {
+        hours: date.getHours(),
+        minutes: date.getMinutes(),
+        seconds: date.getSeconds(),
+    }
+}
+
+const horaInicial = () => {
+    const {seconds, minutes, hours,} = getTime();
+
+    secondHand.style.transform = `translate(0, -50%) rotate(${seconds * 6}deg)`
+
+    minuteHand.style.transform = `translate(0, -50%) rotate(${minutes * 6}deg)`
+
+    hourHand.style.transform = `translate(0, -50%) rotate(${hours * 30}deg)`
+
+}
+
+horaInicial()
+
+
+setInterval( () => {
+
+  const {seconds, minutes, hours,} = getTime()
+
+  secondHand.style.transform = `translate(0, -50%) rotate(${seconds * 6}deg)`
+
+  minuteHand.style.transform = `translate(0, -50%) rotate(${minutes * 6}deg)`
+
+  hourHand.style.transform = `translate(0, -50%) rotate(${hours * 30}deg)`
+
+} , 1000)
+
+
+// Código do dia da semana
 
 var dataAtual = new Date();
 
@@ -36,20 +81,7 @@ switch (diaDaSemana) {
       break;
   }
 
-
-
-const getTime = () => {
-    const date = new Date();
-
-
-    return {
-        hours: date.getHours(),
-        minutes: date.getMinutes(),
-        seconds: date.getSeconds(),
-       
-    }
-    
-}
+// Código da data
 
 const getDay = () => {
     const dateToday = new Date();
@@ -72,18 +104,5 @@ const dataAtualizada = () => {
 
 
 }
-
-setInterval( () => {
-
-    const {seconds, minutes, hours,} = getTime()
-
-    secondHand.style.transform = `translate(0, -50%) rotate(${seconds * 6}deg)`
-
-    minuteHand.style.transform = `translate(0, -50%) rotate(${minutes * 6}deg)`
-
-    hourHand.style.transform = `translate(0, -50%) rotate(${hours * 30}deg)`
-
-} , 1000)
-
 
 dataAtualizada();
