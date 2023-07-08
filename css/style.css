@@ -19,6 +19,7 @@ main {
     justify-content: center;
 }
 
+
 .relogios {
   position: absolute;
   top: 10%;
@@ -73,7 +74,6 @@ main {
     border: 2px solid #333;
     border-radius: 10px;
     position: absolute;
-    top: 100%;
     display: none;
     flex-direction: row;
     align-items: center;
@@ -97,6 +97,28 @@ main {
     margin: 10% 0 0 0;
     
 } */
+
+.digital-mini {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 25%;
+    width: 200px;
+    height: 70px;
+    background-color: #7fff00;
+    padding: 0 25px;
+    border-radius: 100px;
+}
+
+.digito-mini {
+
+    width: 100%;
+    text-align: center;
+    font-size: 1.8rem;
+    
+}
 
 .number {
     font-size: 1.2rem;
@@ -521,10 +543,13 @@ footer img {
     }
 
     .botao {
-        width: 80%;
+        width: 100%;
     }
 
-
+    .digital-mini {
+        width: 150px;
+        height: 50px;
+    }
 
 }
 

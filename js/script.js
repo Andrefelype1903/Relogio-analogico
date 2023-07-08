@@ -12,7 +12,13 @@ const diaSemana = document.querySelector('.semana')
 const horadigital = document.querySelector('.hora_digital')
 const minutodigital = document.querySelector('.minuto_digital')
 const segundodigital = document.querySelector('.segundo_digital')
-const relogioDigital = document.querySelector('.digital')
+
+const horadigitalMini = document.querySelector('.hora_digital--mini')
+const minutodigitalMini = document.querySelector('.minuto_digital--mini')
+const segundodigitalMini = document.querySelector('.segundo_digital--mini')
+
+const relogioDigital = document.querySelector('.digital');
+const relogioDigitalMini = document.querySelector('.digital-mini')
 const botaoDeTroca = document.querySelector('.botao_troca')
 
 
@@ -117,26 +123,50 @@ setInterval( () => {
   horadigital.textContent = hours + ':';
   minutodigital.textContent = minutes + ':';
   segundodigital.textContent = seconds;
+
+  horadigitalMini.textContent = hours + ':';
+  minutodigitalMini.textContent = minutes + ':';
+  segundodigitalMini.textContent = seconds;
   
 
 } , 1000)
 
 dataAtualizada();
 
-let atual = true
+const estilo1 = () => {
+  relogioDigital.style.display = 'none';
+  relogioDigitalMini.style.display = 'none'
+}
+
+const estilo2 = () => {
+  relogioDigital.style.display = 'flex';
+  relogioDigitalMini.style.display = 'none';
+}
+
+const estilo3 = () => {
+  relogioDigital.style.display = 'none';
+  relogioDigitalMini.style.display = 'flex'
+}
+
+
+
+let atual = 1
 
 botaoDeTroca.addEventListener('click', () => {
 
-  if(atual) {
+  if(atual === 1) {
 
-    relogioDigital.style.display = 'flex'
-    atual = false
+    estilo2()
+    atual++
 
-  } else {
+  } else if(atual === 2) {
 
-    relogioDigital.style.display = 'none'
-    atual = true
+    estilo3()
+    atual++
     
+  } else if (atual === 3) {
+    estilo1()
+    atual = 1
   }
 })
 
