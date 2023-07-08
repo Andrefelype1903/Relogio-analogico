@@ -9,6 +9,10 @@ const mesAtlualizado = document.querySelector('.mes');
 const anoAtualizado = document.querySelector('.ano');
 const diaSemana = document.querySelector('.semana')
 
+const horadigital = document.querySelector('.hora_digital')
+const minutodigital = document.querySelector('.minuto_digital')
+const segundodigital = document.querySelector('.segundo_digital')
+
 
 
 
@@ -16,11 +20,10 @@ const diaSemana = document.querySelector('.semana')
 const getTime = () => {
     const date = new Date();
 
-
     return {
-        hours: date.getHours(),
-        minutes: date.getMinutes(),
-        seconds: date.getSeconds(),
+        hours: date.getHours().toString().padStart(2, '0'),
+        minutes: date.getMinutes().toString().padStart(2, '0'),
+        seconds: date.getSeconds().toString().padStart(2, '0'),
     }
 }
 
@@ -87,7 +90,7 @@ const getDay = () => {
     const dateToday = new Date();
 
     return {
-        day: dateToday.getDate(),
+        day: dateToday.getDate().toString().padStart(2, '0'),
         month: dateToday.getMonth() + 1,
         year: dateToday.getFullYear(),
     }
@@ -104,5 +107,16 @@ const dataAtualizada = () => {
 
 
 }
+
+setInterval( () => {
+
+  const {seconds, minutes, hours,} = getTime()
+
+  horadigital.textContent = hours + ':';
+  minutodigital.textContent = minutes + ':';
+  segundodigital.textContent = seconds;
+  
+
+} , 1000)
 
 dataAtualizada();

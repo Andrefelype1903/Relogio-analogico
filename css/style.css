@@ -7,6 +7,8 @@
 
 body {
     background-color: #6495ed;
+    width: 100vw;
+    height: 100vh;
 }
 
 main {
@@ -15,6 +17,19 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.relogios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+    min-height: 600px;
+    overflow: hidden;
+    z-index: 1000;
+
+
 }
 
 .clock {
@@ -27,7 +42,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: auto;
+    margin: 5% 10%;
 }
 
 .number {
@@ -338,17 +353,12 @@ main {
     z-index: 1;
 }
 
-.footer-index {
-    display: flex;
-    padding: 10px;
-    flex-direction: column;
-    align-items: center;
-}
 
 .data-semana {
     position: absolute;
     left: 10%;
 }
+
 
 
 .data-dias {
@@ -361,7 +371,37 @@ main {
 .calendario {
     background-color:#fafad2;
     margin: 0.3rem;
-   
+    
+}
+
+.digital {
+    width: 250px;
+    height: 80%;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: azure;
+    margin: 10% 0 0 0;
+    
+}
+
+.digito {
+    text-align: center;
+    align-items: center;
+    font-size: 3.2rem;
+    margin: 0 0 0 2%;
+}
+
+.footer-index {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer p {
@@ -412,6 +452,8 @@ footer img {
         width: 12px;
         height: 12px
     }
+
+
 
 }
 
