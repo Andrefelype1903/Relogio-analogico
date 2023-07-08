@@ -20,6 +20,14 @@ main {
 }
 
 .relogios {
+  position: absolute;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .relogios {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,11 +36,24 @@ main {
     min-height: 600px;
     overflow: hidden;
     z-index: 1000;
-
-
-}
+} */
 
 .clock {
+    min-width: 600px;
+    min-height: 600px;
+    background: #f0f8ff;
+    border-radius: 600px;
+    border: 15px solid #333;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+/* .clock {
     min-width: 600px;
     min-height: 600px;
     background: #f0f8ff;
@@ -43,7 +64,39 @@ main {
     align-items: center;
     justify-content: center;
     margin: 5% 10%;
+} */
+
+.digital {
+    min-width: 600px;
+    min-height: 600px;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    position: absolute;
+    top: 100%;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: lemonchiffon;
+    z-index: 10;
+    
 }
+/* .digital {
+    width: 250px;
+    height: 80%;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: azure;
+    margin: 10% 0 0 0;
+    
+} */
 
 .number {
     font-size: 1.2rem;
@@ -369,32 +422,46 @@ main {
 }
 
 .calendario {
-    background-color:#fafad2;
-    margin: 0.3rem;
+    background-color:#333;
+    text-align: center;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 700;
     
 }
 
-.digital {
-    width: 250px;
-    height: 80%;
-    padding: 20px;
-    border: 2px solid #333;
-    border-radius: 10px;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    background-color: azure;
-    margin: 10% 0 0 0;
-    
-}
+
+
 
 .digito {
     text-align: center;
     align-items: center;
     font-size: 3.2rem;
     margin: 0 0 0 2%;
+}
+
+.botao {
+    width:800px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 5%;
+}
+
+.botao_troca {
+    width: 60%;
+    font-size: 1.8rem;
+    height: 20%;
+    padding: 5%;
+    border-radius: 20px;
+    background-color: aquamarine;
+}
+
+.botao_troca:hover {
+    background-color: aqua;
 }
 
 .footer-index {
@@ -419,7 +486,7 @@ footer img {
 
 @media screen and (max-width: 580px) {
     
-    .clock {
+    .clock, .digital {
         min-width: 85vw;
         min-height: 85vw;
         border: 8px solid #333;
@@ -451,6 +518,10 @@ footer img {
     .center {
         width: 12px;
         height: 12px
+    }
+
+    .botao {
+        width: 80%;
     }
 
 

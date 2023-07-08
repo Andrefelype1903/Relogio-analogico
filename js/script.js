@@ -12,6 +12,8 @@ const diaSemana = document.querySelector('.semana')
 const horadigital = document.querySelector('.hora_digital')
 const minutodigital = document.querySelector('.minuto_digital')
 const segundodigital = document.querySelector('.segundo_digital')
+const relogioDigital = document.querySelector('.digital')
+const botaoDeTroca = document.querySelector('.botao_troca')
 
 
 
@@ -120,3 +122,22 @@ setInterval( () => {
 } , 1000)
 
 dataAtualizada();
+
+let atual = true
+
+botaoDeTroca.addEventListener('click', () => {
+
+  if(atual) {
+
+    relogioDigital.style.display = 'flex'
+    atual = false
+
+  } else {
+
+    relogioDigital.style.display = 'none'
+    atual = true
+    
+  }
+})
+
+
