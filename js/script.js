@@ -225,42 +225,42 @@ const estilo4 = () => {
 
 const estilo5 = () => {
   algNormais();
-  relogioAnalogico.style.backgroundImage = 'url(../imagem/fundo1.jpg)'
+  relogioAnalogico.style.backgroundImage = 'url(./imagem/fundo1.jpg)'
   relogioDigitalMini.style.display = 'none';
   
 }
 
 const estilo6 = () => {
   algNormais();
-  relogioAnalogico.style.backgroundImage = 'url(../imagem/fundo2.jpg)'
+  relogioAnalogico.style.backgroundImage = 'url(./imagem/fundo2.jpg)'
   relogioDigitalMini.style.display = 'none';
   
 }
 
 const estilo7 = () => {
   algNormais();
-  relogioAnalogico.style.backgroundImage = 'url(../imagem/fundo3.jpg)'
+  relogioAnalogico.style.backgroundImage = 'url(./imagem/fundo3.jpg)'
   relogioDigitalMini.style.display = 'none';
   
 }
 
 const estilo8 = () => {
   algNormais();
-  relogioAnalogico.style.backgroundImage = 'url(../imagem/fundo4.jpg)'
+  relogioAnalogico.style.backgroundImage = 'url(./imagem/fundo4.jpg)'
   relogioDigitalMini.style.display = 'none';
   
 }
 
 const estilo9 = () => {
   algNormais();
-  relogioAnalogico.style.backgroundImage = 'url(../imagem/fundo5.jpg)'
+  relogioAnalogico.style.backgroundImage = 'url(./imagem/fundo5.jpg)'
   relogioDigitalMini.style.display = 'none';
   
 }
 
 const estilo10 = () => {
   algNormais();
-  relogioAnalogico.style.backgroundImage = 'url(../imagem/fundo6.png)'
+  relogioAnalogico.style.backgroundImage = 'url(./imagem/fundo6.png)'
   relogioAnalogico.style.backgroundPosition = '30%'
   relogioDigitalMini.style.display = 'none';
   
@@ -268,14 +268,14 @@ const estilo10 = () => {
 
 const estilo11 = () => {
   algNormais();
-  relogioAnalogico.style.backgroundImage = 'url(../imagem/fundo7.jpg)'
+  relogioAnalogico.style.backgroundImage = 'url(./imagem/fundo7.jpg)'
   relogioDigitalMini.style.display = 'none';
   
 }
 
 const estilo12 = () => {
   algNormais();
-  relogioAnalogico.style.backgroundImage = 'url(../imagem/fundo8.jpg)'
+  relogioAnalogico.style.backgroundImage = 'url(./imagem/fundo8.jpg)'
   relogioDigitalMini.style.display = 'none';
   
 }
