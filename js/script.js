@@ -30,6 +30,10 @@ const numero12 = document.querySelector('.number-12');
 const horadigital = document.querySelector('.hora_digital');
 const minutodigital = document.querySelector('.minuto_digital');
 const segundodigital = document.querySelector('.segundo_digital');
+const diaSemanaDigital = document.querySelector('.dia_semana_digital');
+const diaDigital = document.querySelector('.dia_digital');
+const mesDigital = document.querySelector('.mes_digital');
+const anoDigital = document.querySelector('.ano_digital');
 
 // seletores relógio digital mini
 const horadigitalMini = document.querySelector('.hora_digital--mini');
@@ -55,6 +59,7 @@ const getTime = () => {
     }
 }
 
+// código do relógio analógico
 const horaInicial = () => {
     const {seconds, minutes, hours,} = getTime();
 
@@ -82,7 +87,7 @@ setInterval( () => {
 } , 1000);
 
 
-// Código do dia da semana
+// Código do dia da semana 
 
 var dataAtual = new Date();
 
@@ -91,24 +96,31 @@ var diaDaSemana = dataAtual.getDay();
 switch (diaDaSemana) {
     case 0:
       diaSemana.textContent = "Domingo";
+      diaSemanaDigital.textContent ="Domingo";
       break;
     case 1:
         diaSemana.textContent = "Segunda-feira";
+        diaSemanaDigital.textContent = "Segunda-feira";
       break;
     case 2:
         diaSemana.textContent = "Terça-feira";
+        diaSemanaDigital.textContent = "Terça-feira";
       break;
     case 3:
       diaSemana.textContent = "Quarta-feira";
+      diaSemanaDigital.textContent = "Quarta-feira";
       break;
     case 4:
         diaSemana.textContent = "Quinta-feira";
+        diaSemanaDigital.textContent = "Quinta-feira";
       break;
     case 5:
         diaSemana.textContent = "Sexta-feira";
+        diaSemanaDigital.textContent = "Sexta-feira";
       break;
     case 6:
         diaSemana.textContent = "Sábado";
+        diaSemanaDigital.textContent = "Sábado";
       break;
   }
 
@@ -124,7 +136,7 @@ const getDay = () => {
     }
 }
 
-
+// código do relógio digital 
 const dataAtualizada = () => {
 
     const{day, month, year} = getDay()
@@ -132,6 +144,10 @@ const dataAtualizada = () => {
     diaAtualizado.textContent = day;
     mesAtlualizado.textContent = month;
     anoAtualizado.textContent = year;
+
+    diaDigital.textContent = day;
+    mesDigital.textContent = month;
+    anoDigital. textContent = year;
 
 
 }
@@ -148,10 +164,12 @@ setInterval( () => {
   minutodigitalMini.textContent = minutes + ':';
   segundodigitalMini.textContent = seconds;
   
-
 } , 1000)
 
 dataAtualizada();
+
+
+// estilos de reógio 
 
 const algRomanos = () => {
 
@@ -244,7 +262,6 @@ const estilo10 = () => {
   algNormais();
   relogioAnalogico.style.backgroundImage = 'url(../imagem/fundo6.png)'
   relogioAnalogico.style.backgroundPosition = '30%'
-  // relogioAnalogico.style.backgroundSize = 'cover'
   relogioDigitalMini.style.display = 'none';
   
 }
